@@ -14,7 +14,16 @@ class EmailValidator(DjangoEmailValidator):
         super(EmailValidator, self).__call__(value, *args, **kwargs)
 
         value = force_text(value)
-        domain = value.split('@')[1]
+
+        # Django 1.4.x doesn't raise an exception if the email address contains
+        # no '@' character, so we need to explicitly handle that case
+        # here. Once support for Django 1.4 is dropped, this code can be
+        # removed. See https://projects.thecut.net.au/issues/3609
+        try:
+            domain = value.split('@')[1]
+        except IndexError:
+            raise ValidationError('Enter a valid email address domain.',
+                                  code=self.code)
 
         try:
             resolver.query(domain, 'MX')
