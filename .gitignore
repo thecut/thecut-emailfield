@@ -1,0 +1,4 @@
+*.py[co]
+.Python
+.DS_Store
+.tox
