@@ -2,3 +2,4 @@
 .Python
 .DS_Store
 .tox
+.coverage
