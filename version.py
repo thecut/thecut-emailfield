@@ -31,9 +31,10 @@
 #
 #   include RELEASE-VERSION
 
-__all__ = ("get_git_version")
-
 from subprocess import Popen, PIPE
+
+
+__all__ = ['get_git_version']
 
 
 def call_git_describe(abbrev=4):
@@ -97,7 +98,7 @@ def get_git_version(abbrev=4):
 
     # Finally, return the current version.
 
-    return version
+    return '{0}'.format(version)
 
 
 if __name__ == "__main__":
