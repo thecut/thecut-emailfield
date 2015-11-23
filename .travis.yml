@@ -15,6 +15,9 @@ env:
     - TOX_ENV=py34-django18
     - TOX_ENV=py34-django19
 
-install: pip install tox
+install: pip install codecov tox
 
 script: tox -e $TOX_ENV
+
+after_success:
+    - codecov
