@@ -1,0 +1,16 @@
+language: python
+
+python:
+  - "3.5"
+  - "3.4"
+  - "2.7"
+
+before_install:
+    - pip install codecov
+
+install: pip install -r requirements-test.txt
+
+script: coverage run --source thecut django-admin.py test emailfield
+
+after_success:
+  - codecov
