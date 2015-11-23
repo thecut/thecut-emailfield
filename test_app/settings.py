@@ -22,3 +22,5 @@ INSTALLED_APPS = [
 SITE_ID = 1
 
 SECRET_KEY = 'thecut'
+
+MIDDLEWARE_CLASSES = []  # silences dj1.7 warning
