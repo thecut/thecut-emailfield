@@ -1,6 +1,13 @@
 from setuptools import setup, find_packages
+from sys import version_info as PYTHON_VERSION
 from version import get_git_version
 
+install_requires = []
+
+if PYTHON_VERSION < (3,):
+    install_requires.append('dnspython>=1.11.1,<2')
+else:
+    install_requires.append('dnspython3>=1.11.1,<2')
 
 setup(
     name='thecut-emailfield',
@@ -11,5 +18,5 @@ setup(
     version=get_git_version(),
     packages=find_packages(),
     include_package_data=True,
-    install_requires=['dnspython>=1.11.1,<2.0'],
+    install_requires=install_requires,
 )
