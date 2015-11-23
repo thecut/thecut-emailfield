@@ -9,7 +9,7 @@ from test_app.models import EmailModel
 from unittest import skipIf
 
 
-class TestEmailField(TestCase):
+class TestEmailModelField(TestCase):
 
     """Tests for the EmailField model field."""
 
