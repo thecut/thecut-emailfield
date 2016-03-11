@@ -31,6 +31,7 @@
 #
 #   include RELEASE-VERSION
 
+from __future__ import unicode_literals
 from subprocess import Popen, PIPE
 
 
