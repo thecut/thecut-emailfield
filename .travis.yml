@@ -9,7 +9,8 @@ env:
     - TOX_ENV=py27-django19
     - TOX_ENV=py34-django18
     - TOX_ENV=py34-django19
-
+    - TOX_ENV=py35-django18
+    - TOX_ENV=py35-django19
 
 install: pip install codecov tox
 
@@ -17,3 +18,10 @@ script: tox -e $TOX_ENV
 
 after_success:
     - codecov -e $TOX_ENV
+
+addons:
+  apt:
+    sources:
+      - deadsnakes
+    packages:
+      - python3.5
