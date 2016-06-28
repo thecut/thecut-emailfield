@@ -13,13 +13,6 @@ class TestEmailModelField(TestCase):
 
     """Tests for the EmailField model field."""
 
-    @skipIf(DJANGO_VERSION >= (1, 5), 'This validation is handled by Django.')
-    def test_rejects_address_without_at_sign(self):
-        """Reject email addresses without an '@' sign."""
-        model = EmailModel(email='INVALID')
-        with self.assertRaises(ValidationError):
-            model.full_clean()
-
     @patch('dns.resolver.query')
     def test_rejects_domain_without_mx_record(self, fake_query):
         """Reject email address for a domain without an MX record."""
