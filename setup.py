@@ -9,7 +9,7 @@ from sys import version_info as PYTHON_VERSION
 from version import get_git_version
 
 
-install_requires = ['sphinx_rtd_theme>=0.1.10a0']
+install_requires = []
 
 if PYTHON_VERSION < (3,):
     install_requires.append('dnspython>=1.11.1,<2')
