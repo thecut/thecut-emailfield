@@ -4,3 +4,4 @@ include LICENSE
 include COPYRIGHT
 include README.rst
 include AUTHORS.rst
+include HISTORY.rst
