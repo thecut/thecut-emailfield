@@ -3,14 +3,14 @@
 History
 -------
 
-0.4 (2015-06-28)
+0.4 (2016-06-28)
 ++++++++++++++++++
 
 * Redesigned testing environment.
 * Added basic documentation.
 
 
-0.3 (2015-06-28)
+0.3 (2016-06-28)
 ++++++++++++++++++
 
 * Stop automated testing for Django 1.5 and Django 1.6.
@@ -19,7 +19,7 @@ History
 * Removed pre-Django 1.5 email validation code.
 
 
-0.2.4 (2015-03-11)
+0.2.4 (2016-03-11)
 ++++++++++++++++++
 
 * Configured code coverage exceptions.
