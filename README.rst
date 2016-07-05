@@ -25,9 +25,35 @@ The full documentation is at https://thecut-emailfield.readthedocs.org.
 Quickstart
 ----------
 
-Install thecut-emailfield::
+Install ``thecut-emailfield``::
 
     pip install thecut-emailfield
+
+
+An example ``models.py``::
+
+    # -*- coding: utf-8 -*-
+    from __future__ import absolute_import, unicode_literals
+    from django.db import models
+    from thecut.emailfield.models import EmailField
+
+
+    class EmailModel(models.Model):
+
+        email = EmailField()
+
+
+An example ``forms.py``::
+
+    # -*- coding: utf-8 -*-
+    from __future__ import absolute_import, unicode_literals
+    from django import forms
+    from thecut.emailfield.forms import EmailField
+
+
+    class EmailForm(forms.Form):
+
+        email = EmailField()
 
 
 Credits
