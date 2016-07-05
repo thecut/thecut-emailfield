@@ -11,7 +11,9 @@ env:
     - TOX_ENV=py35-django19
     - TOX_ENV=py35-django110
 
-install: pip install codecov tox tox-travis
+install:
+    - pip install --upgrade pip setuptools wheel
+    - pip install codecov tox tox-travis
 
 script: tox -e $TOX_ENV
 
