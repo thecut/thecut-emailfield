@@ -11,7 +11,8 @@ from unittest import skipIf
 
 class TestEmailModelField(TestCase):
 
-    """Tests for the EmailField model field."""
+    """Tests for the :py:class:`thecut.emailfield.models.EmailField`
+    model field."""
 
     @patch('dns.resolver.query')
     def test_rejects_domain_without_mx_record(self, fake_query):
