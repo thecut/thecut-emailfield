@@ -16,6 +16,12 @@ thecut-emailfield
 A Django email field which validates by checking for an MX record on the domain.
 
 
+Features
+--------
+
+    * ...
+
+
 Documentation
 -------------
 
@@ -25,10 +31,7 @@ The full documentation is at https://thecut-emailfield.readthedocs.org.
 Quickstart
 ----------
 
-Install ``thecut-emailfield``::
-
-    pip install thecut-emailfield
-
+Install ``thecut-emailfield`` using the :ref:`installation`.
 
 An example ``models.py``::
 
@@ -59,4 +62,4 @@ An example ``forms.py``::
 Credits
 -------
 
-See ``AUTHORS.rst`` for credits.
+See :ref:`credits`.

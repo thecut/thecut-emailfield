@@ -20,7 +20,6 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import pkg_resources
-import sphinx_rtd_theme
 import sys
 
 # -- General configuration ------------------------------------------------
