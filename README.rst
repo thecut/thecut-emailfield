@@ -31,10 +31,10 @@ The full documentation is at https://thecut-exampleapp.readthedocs.org.
 Quickstart
 ----------
 
-Install ``thecut-exampleapp`` using the :ref:`installation`.
+Install ``thecut-exampleapp`` using the installation instructions found in the project documentation.
 
 
 Credits
 -------
 
-See :ref:`credits`.
+See ``AUTHORS.rst``.
