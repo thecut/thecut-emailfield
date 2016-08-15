@@ -14,6 +14,7 @@ Contents:
    readme
    installation
    usage
+   reference/index
    testing/index
    history
    authors
