@@ -25,7 +25,7 @@ The full documentation is at https://thecut-emailfield.readthedocs.org.
 Quickstart
 ----------
 
-Install ``thecut-emailfield``using the installation instructions found in the project documentation.
+Install ``thecut-emailfield`` using the installation instructions found in the project documentation.
 
 An example ``models.py``::
 
