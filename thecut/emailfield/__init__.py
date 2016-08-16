@@ -3,7 +3,7 @@ from __future__ import absolute_import, unicode_literals
 
 __title__ = 'thecut-emailfield'
 
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 
 __url__ = 'https://github.com/thecut/thecut-emailfield'
 
