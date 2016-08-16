@@ -16,12 +16,6 @@ thecut-emailfield
 A Django email field which validates by checking for an MX record on the domain.
 
 
-Features
---------
-
-    * ...
-
-
 Documentation
 -------------
 
