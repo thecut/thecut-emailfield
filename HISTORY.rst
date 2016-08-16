@@ -4,6 +4,14 @@
 History
 =======
 
+
+1.0 (2016-08-16)
+================
+
+* Testing improvements
+* Documentation improvements.
+
+
 0.4 (2016-06-28)
 ================
 
