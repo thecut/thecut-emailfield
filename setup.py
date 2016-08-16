@@ -6,7 +6,6 @@ from thecut.emailfield import __version__
 from setuptools import setup, find_packages
 import sys
 from sys import version_info as PYTHON_VERSION
-from version import get_git_version
 
 
 install_requires = []
