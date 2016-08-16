@@ -9,8 +9,6 @@ Validating a model field
 You can use ``thecut-emailfield`` to validate email addresses on a model by
 using :class:`~thecut.emailfield.models.EmailField`.
 
-.. autoclass:: thecut.emailfield.models.EmailField
-
 An example ``models.py``::
 
     # -*- coding: utf-8 -*-
@@ -29,8 +27,6 @@ Validating a form field
 
 You can use ``thecut-emailfield`` to validate email addresses on a form by
 using :class:`~thecut.emailfield.forms.EmailField`.
-
-.. autoclass:: thecut.emailfield.forms.EmailField
 
 An example ``forms.py``::
 

@@ -31,7 +31,7 @@ The full documentation is at https://thecut-emailfield.readthedocs.org.
 Quickstart
 ----------
 
-Install ``thecut-emailfield`` using the :ref:`installation`.
+Install ``thecut-emailfield``using the installation instructions found in the project documentation.
 
 An example ``models.py``::
 
@@ -62,4 +62,4 @@ An example ``forms.py``::
 Credits
 -------
 
-See :ref:`credits`.
+See ``AUTHORS.rst``.
